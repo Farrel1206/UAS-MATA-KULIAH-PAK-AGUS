@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        - ORG_NAME=BEM STMIK Tazkia
+        - ORG_FOUNDED=2025
+        - ORG_EMAIL=BEM.stmik.tazkia@gmail.com
+    container_name: container-uas-bem
+    ports:
+      - "8205:80"
+    restart: always
